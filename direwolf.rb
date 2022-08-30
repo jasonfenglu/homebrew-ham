@@ -1,9 +1,8 @@
 class Direwolf < Formula
   desc "Software modem and TNC for AX.25"
   homepage "https://github.com/wb2osz/direwolf"
-  url "https://github.com/wb2osz/direwolf/archive/1.4-dev-E.tar.gz"
-  version "1.4a5"
-  sha256 "1e0d75fd7485040ced350fa95714f3760925f039fcd68b45e1d2153a7101f9da"
+  url "https://github.com/wb2osz/direwolf/archive/refs/tags/1.6.tar.gz"
+  sha256 "208b0563c9b339cbeb0e1feb52dc18ae38295c40c0009d6381fc4acb68fdf660"
   head "https://github.com/wb2osz/direwolf.git"
 
   depends_on "hamlib"
@@ -22,6 +21,6 @@ class Direwolf < Formula
   end
 
   test do
-    system "#{bin}/direwolf", "-V"
+    system "#{bin}/direwolf", "-S"
   end
 end
