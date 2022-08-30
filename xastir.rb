@@ -11,6 +11,7 @@ class Xastir < Formula
   depends_on "imagemagick@6"
   depends_on "libgeotiff"
   depends_on "openmotif"
+  depends_on "pcre"
   depends_on "proj"
   depends_on "shapelib"
 
